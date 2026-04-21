@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rifas El Patrón</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial;
+  background: linear-gradient(135deg,#1e1b4b,#312e81);
+  color:white;
+  text-align:center;
+}
+
+/* LOGO */
+.logo{
+  width:140px;
+  margin-top:20px;
+  border-radius:50%;
+  box-shadow:0 0 20px gold;
+}
+
+/* TARJETAS */
+.card{
+  background:rgba(255,255,255,0.1);
+  margin:15px;
+  padding:20px;
+  border-radius:20px;
+}
+
+/* INPUTS */
+input{
+  width:90%;
+  padding:12px;
+  margin:8px;
+  border-radius:10px;
+  border:none;
+}
+
+/* BOTON */
+button{
+  background:linear-gradient(45deg,#ffcc00,#ff9900);
+  border:none;
+  padding:15px;
+  border-radius:10px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 LOGO (NO DEPENDE DE NOMBRE) -->
+<img src="https://picsum.photos/200" class="logo">
+
+<h1>👑 Rifas El Patrón 👑</h1>
+
+<div class="card">
+<h3>🥇 Toyota 2026</h3>
+<p>🎟️ Por cada 5 tickets participas por 5 entradas al Mundial 🇲🇽</p>
+</div>
+
+<div class="card">
+<h3>🥈 $20,000 MXN</h3>
+</div>
+
+<div class="card">
+<h3>🥉 $10,000 MXN</h3>
+</div>
+
+<div class="card">
+<h3>$100 MXN por ticket</h3>
+<p>$500 = 5 números</p>
+</div>
+
+<div class="card">
+<h3>🏦 Pago</h3>
+<p>Banco: Santander</p>
+<p>Cuenta: 1234567890</p>
+</div>
+
+<div class="card">
+<h3>🎟️ Comprar</h3>
+
+<input id="numero" placeholder="Número">
+<input id="nombre" placeholder="Nombre">
+<input id="apellido" placeholder="Apellido">
+<input id="telefono" placeholder="Teléfono">
+<input id="correo" placeholder="Correo">
+<input id="comprobante" type="file">
+
+<button onclick="comprar()">Finalizar compra</button>
+</div>
+
+<script>
+function comprar(){
+  alert("✅ Funciona correctamente (luego conectamos Firebase)");
+}
+</script>
+
+</body>
+</html>
